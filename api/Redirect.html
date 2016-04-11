@@ -1,0 +1,680 @@
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>&lt;Redirect&gt; · React Router</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="A &lt;Redirect&gt; sets up a redirect to another route in your application to maintain old URLs.">
+        <meta name="generator" content="GitBook 3.0.0-pre.5">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="IndexRoute.html" />
+    
+    
+    <link rel="prev" href="PlainRoute.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book"
+    data-level="3.1.8"
+    data-chapter-title="&lt;Redirect&gt;"
+    data-filepath="api/Redirect.md"
+    data-basepath=".."
+    data-revision="Mon Apr 11 2016 07:39:17 GMT+0100 (BST)"
+    data-innerlanguage="">
+    
+
+<div class="book-summary">
+    
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+
+            
+
+
+            
+            
+    
+        <li class="chapter " data-level="0" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    React Router Documentation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="../About.html">
+            
+                <a href="../About.html">
+            
+                    
+                        <b>1.</b>
+                    
+                    What React Router is/isn&#39;t
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2" >
+            
+                <span>
+            
+                    
+                        <b>2.</b>
+                    
+                    Examples
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="../examples/NotFound.html">
+            
+                <a href="../examples/NotFound.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    Client side &quot;404 not found&quot;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                        <b>3.</b>
+                    
+                    API Reference
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" >
+            
+                <span>
+            
+                    
+                        <b>3.1.</b>
+                    
+                    Components
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="Router.html">
+            
+                <a href="Router.html">
+            
+                    
+                        <b>3.1.1.</b>
+                    
+                    &lt;Router&gt;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="Link.html">
+            
+                <a href="Link.html">
+            
+                    
+                        <b>3.1.2.</b>
+                    
+                    &lt;Link&gt;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="IndexLink.html">
+            
+                <a href="IndexLink.html">
+            
+                    
+                        <b>3.1.3.</b>
+                    
+                    &lt;IndexLink&gt;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="RouterContext.html">
+            
+                <a href="RouterContext.html">
+            
+                    
+                        <b>3.1.4.</b>
+                    
+                    &lt;RouterContext&gt;
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.4.1" data-path="RouterContext.html">
+            
+                <a href="RouterContext.html#contextrouter">
+            
+                    
+                        <b>3.1.4.1.</b>
+                    
+                    context.router
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5" data-path="RoutingContext.html">
+            
+                <a href="RoutingContext.html">
+            
+                    
+                        <b>3.1.5.</b>
+                    
+                    &lt;RoutingContext&gt; (deprecated)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.6" data-path="Route.html">
+            
+                <a href="Route.html">
+            
+                    
+                        <b>3.1.6.</b>
+                    
+                    &lt;Route&gt;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.7" data-path="PlainRoute.html">
+            
+                <a href="PlainRoute.html">
+            
+                    
+                        <b>3.1.7.</b>
+                    
+                    Plain Route
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.1.8" data-path="Redirect.html">
+            
+                <a href="Redirect.html">
+            
+                    
+                        <b>3.1.8.</b>
+                    
+                    &lt;Redirect&gt;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.9" data-path="IndexRoute.html">
+            
+                <a href="IndexRoute.html">
+            
+                    
+                        <b>3.1.9.</b>
+                    
+                    &lt;IndexRoute&gt;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.10" data-path="IndexRedirect.html">
+            
+                <a href="IndexRedirect.html">
+            
+                    
+                        <b>3.1.10.</b>
+                    
+                    &lt;IndexRedirect&gt;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="RouteComponents.html">
+            
+                <a href="RouteComponents.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    Route Components
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="Histories.html">
+            
+                <a href="Histories.html">
+            
+                    
+                        <b>3.3.</b>
+                    
+                    Histories
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" >
+            
+                <span>
+            
+                    
+                        <b>3.4.</b>
+                    
+                    Utilities
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.4.1" data-path="match.html">
+            
+                <a href="match.html">
+            
+                    
+                        <b>3.4.1.</b>
+                    
+                    match()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.2" data-path="createRoutes.html">
+            
+                <a href="createRoutes.html">
+            
+                    
+                        <b>3.4.2.</b>
+                    
+                    createRoutes()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.3" data-path="PropTypes.html">
+            
+                <a href="PropTypes.html">
+            
+                    
+                        <b>3.4.3.</b>
+                    
+                    PropTypes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.4" data-path="useRoutes.html">
+            
+                <a href="useRoutes.html">
+            
+                    
+                        <b>3.4.4.</b>
+                    
+                    useRoutes (deprecated)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="Mixins.html">
+            
+                <a href="Mixins.html">
+            
+                    
+                        <b>3.5.</b>
+                    
+                    Mixins (deprecated)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="../StackOverflowQuestions.html">
+            
+                <a href="../StackOverflowQuestions.html">
+            
+                    
+                        <b>4.</b>
+                    
+                    StackOverflow Questions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="../GLOSSARY.html">
+            
+                <a href="../GLOSSARY.html">
+            
+                    
+                        <b>5.</b>
+                    
+                    Glossary
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="../FAQ.html">
+            
+                <a href="../FAQ.html">
+            
+                    
+                        <b>6.</b>
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="../Feedback.html">
+            
+                <a href="../Feedback.html">
+            
+                    
+                        <b>7.</b>
+                    
+                    Feedback
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            <li class="divider"></li>
+            
+
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+        </ul>
+    </nav>
+    
+</div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+<div class="book-header" role="navigation">
+    
+    <a href="../GLOSSARY.html" class="btn pull-left" aria-label="Glossary"><i class="fa fa-sort-alpha-asc"></i></a>
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >&lt;Redirect&gt;</a>
+    </h1>
+</div>
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            <section class="normal markdown-section">
+                            
+                            <h1 id="redirect"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Redirect</span><span class="token punctuation">&gt;</span></span></code></h1>
+<p>A <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Redirect</span><span class="token punctuation">&gt;</span></span></code> sets up a redirect to another route in your application to maintain old URLs.</p>
+<h2 id="props">Props</h2>
+<h3 id="from"><code>from</code></h3>
+<p>The path you want to redirect from, including dynamic segments.</p>
+<h3 id="to"><code>to</code></h3>
+<p>The path you want to redirect to.</p>
+<h3 id="query"><code>query</code></h3>
+<p>By default, the query parameters will just pass through but you can specify them if you need to.</p>
+<pre><code class="lang-jsx"><span class="token comment" spellcheck="true">// Say we want to change from `/profile/123` to `/about/123`</span>
+<span class="token comment" spellcheck="true">// and redirect `/get-in-touch` to `/contact`</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Route</span> <span class="token attr-name">component</span><span class="token script language-javascript"><span class="token punctuation">=</span><span class="token punctuation">{</span>App<span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Route</span> <span class="token attr-name">path</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>about/:userId<span class="token punctuation">&quot;</span></span> <span class="token attr-name">component</span><span class="token script language-javascript"><span class="token punctuation">=</span><span class="token punctuation">{</span>UserProfile<span class="token punctuation">}</span></span> <span class="token punctuation">/&gt;</span></span>
+  <span class="token punctuation">{</span><span class="token comment" spellcheck="true">/* /profile/123 -&gt; /about/123 */</span><span class="token punctuation">}</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Redirect</span> <span class="token attr-name">from</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>profile/:userId<span class="token punctuation">&quot;</span></span> <span class="token attr-name">to</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>about/:userId<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>Route</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>Note that the <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Redirect</span><span class="token punctuation">&gt;</span></span></code> can be placed anywhere in the route hierarchy, though normal precedence rules apply. If you&apos;d prefer the redirects to be next to their respective routes, the <code>from</code> path will match the same as a regular route <code>path</code>.</p>
+<pre><code class="lang-jsx"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Route</span> <span class="token attr-name">path</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>course/:courseId<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Route</span> <span class="token attr-name">path</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>dashboard<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+  <span class="token punctuation">{</span><span class="token comment" spellcheck="true">/* /course/123/home -&gt; /course/123/dashboard */</span><span class="token punctuation">}</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Redirect</span> <span class="token attr-name">from</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>home<span class="token punctuation">&quot;</span></span> <span class="token attr-name">to</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>dashboard<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>Route</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+
+                            
+                            </section>
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="PlainRoute.html" class="navigation navigation-prev " aria-label="Previous page: Plain Route">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="IndexRoute.html" class="navigation navigation-next " aria-label="Next page: &lt;IndexRoute&gt;">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+</div>
+
+        
+    <script src="../gitbook/app.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-anker-enable/anker.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-jsfiddle/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
+        
+    
+    <script>
+    require(["gitbook"], function(gitbook) {
+        gitbook.start({"edit-link":{"base":"https://github.com/knowbody/react-router-docs/tree/master/docs","label":""},"github":{"url":"https://github.com/knowbody/react-router-docs/tree/master/docs"},"jsfiddle":{"type":"frame","tabs":["result"],"height":"500","width":"100%"},"sharing":{"facebook":false,"twitter":false,"all":["facebook","twitter"],"google":false,"weibo":false,"instapaper":false,"vk":false},"prism":{},"theme-official":{},"anker-enable":{},"search":{"maxIndexSize":1000000},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}}});
+    });
+    </script>
+
+    </body>
+</html>
